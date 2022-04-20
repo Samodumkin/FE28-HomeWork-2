@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  resize: none;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: auto;
+  position: relative;
+  z-index: 100;
+}
+@import "cdn.scss";
+@import "variables.scss";
+@import "colors.scss";
+@import "mixins.scss";
+@import "content/header.scss";
+@import "content/features.scss";
+@import "content/work.scss";
+@import "content/download.scss";
+@import "content/footer.scss";
+@import "content/our-team.scss";
+html {
+  font-family: "Raleway", sans-serif;
+}

@@ -1,0 +1,112 @@
+.footer {
+  padding-top: 71px;
+  background: #353c65;
+}
+.footer-wrap {
+  background: rgb(53, 60, 101);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0px -15px;
+}
+.footer-right-content {
+  max-width: 370px;
+  margin: 0px 15px;
+}
+.footer-right-title {
+  margin-bottom: 29px;
+  h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
+.footer-right-subtitle {
+  h5 {
+    @include h5;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+  }
+}
+.footer-social {
+  max-width: 370px;
+}
+.footer-social-title {
+  margin-bottom: 54px;
+  h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
+.footer-social-icon-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 71px;
+}
+.footer-social-icon {
+  margin: 0px 13px;
+  .footer-social-icon-img {
+    width: 39px;
+    height: 39px;
+    display: inline-block;
+  }
+}
+.footer-left-content {
+  max-width: 370px;
+}
+.footer-left-title {
+  margin-bottom: 29px;
+  h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
+.footer-left-subtitle {
+  h5 {
+    @include h5;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+  }
+}
+.footer-wrapper {
+  padding: 24px 0px;
+  background: #2c3154;
+}
+.footer-wrapper-content {
+  .copyright {
+    margin: 0 auto;
+    max-width: 400px;
+    @include h5;
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(128, 128, 128);
+    &::after {
+      content: "by Kamal Chaneman";
+      color: #fff;
+    }
+    span {
+      &::after {
+        content: "\f1f9";
+        display: inline-block;
+        margin: 0px 3px;
+        vertical-align: middle;
+        @include h5;
+        font-family: "Font Awesome 6 Free";
+        color: rgb(128, 128, 128);
+      }
+    }
+  }   
+}
