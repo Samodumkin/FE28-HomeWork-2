@@ -5,6 +5,9 @@
   background-position: center;
   position: relative;
   padding: 0 0 120px;
+  @media (max-width: 768px) {
+    padding: 0 0 50px;
+  }
 
   &:after {
     content: "";
@@ -26,28 +29,21 @@
   align-items: center;
   flex-wrap: wrap;
   position: relative;
-
-  &::after {
-    content: "";
-    display: block;
-    width: 8.375rem;
-    border: 1.5px solid rgb(186, 187, 197);
-    position: absolute;
-    bottom: 0;
-    transform: translate(-50%, -0%);
-    left: 50%;
+  @media (max-width: 768px) {
+    border: none;
   }
 
   .header-logo {
-    width: 270px;
-    height: 100px;
-
+    padding: 25px 0px;
     .logo {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
+      @include h2;
+      color: #656980;
+      &::after {
+        content: "BOX";
+        display: inline-block;
+        color: #ffffff;
+        font-weight: 100;
+      }
     }
   }
 
@@ -55,6 +51,16 @@
     .header-nav-list {
       display: flex;
       flex-wrap: wrap;
+      &::after {
+        content: "";
+        display: block;
+        width: 8.375rem;
+        border: 1.5px solid rgb(186, 187, 197);
+        position: absolute;
+        bottom: 0;
+        transform: translate(-50%, -0%);
+        left: 50%;
+      }
 
       .list-item {
         margin: 0 28px;
@@ -66,6 +72,41 @@
           text-align: center;
         }
       }
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+.header-burger {
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    .burger {
+      background-color: #ffffff;
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      top: 9px;
+      left: 0;
+    }
+    &::after,
+    &::before {
+      content: "";
+      background-color: #ffffff;
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      left: 0;
+    }
+    &::after {
+      top: 0;
+    }
+    &::before {
+      bottom: 0;
     }
   }
 }
@@ -80,12 +121,16 @@
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
+    @media (max-width: 768px) {
+      margin-top: 20px;
+      font-size: 36px;
+      line-height: 42px;
+    }
   }
 }
 
 .header-subtitle {
   margin-bottom: 80px;
-
   .subtitle {
     max-width: 1170px;
     text-align: center;
@@ -93,6 +138,11 @@
     font-size: 1.75rem;
     line-height: 1.75rem;
     color: #ffffff;
+    @media (max-width: 768px) {
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 50px;
+    }
   }
 }
 
@@ -101,7 +151,7 @@
   justify-content: center;
   .header-btn {
     display: inline-block;
-    padding: 25px 80px;
+    padding: 1.5625rem 5rem;
     background-color: $red;
     @include h4;
     text-align: center;

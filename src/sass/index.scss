@@ -13,7 +13,7 @@
   padding: 0 15px;
   margin: auto;
   position: relative;
-  z-index: 100;
+  z-index: 2;
 }
 @import "cdn.scss";
 @import "variables.scss";
@@ -25,6 +25,12 @@
 @import "content/download.scss";
 @import "content/footer.scss";
 @import "content/our-team.scss";
+@import "content/testimonials.scss";
 html {
+  font-family: "Cardo";
   font-family: "Raleway", sans-serif;
+  @media (max-width: 1024px) {
+    font-size: 0.75rem;
+  }
+  
 }

@@ -7,6 +7,12 @@
   justify-content: space-between;
   .features-card-content {
     width: 31.63%;
+    @media (max-width: 809px) {
+      width: 45%;
+      }
+      @media (max-width: 420px) {
+        width: 100%;
+        }
   }
   .features-card-content-icon {
     display: flex;
